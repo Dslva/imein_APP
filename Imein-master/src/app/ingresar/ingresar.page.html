@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button id="btn-ingresar" class="btn btn-uno" expand="block" [routerLink]="['/ingresar-producto']">ingresar</ion-button>
+  <ion-button id="btn-editar" class="btn" expand="block">Editar</ion-button> 
+  <ion-button id="btn-eliminar" class="btn" expand="block">eliminar</ion-button> 
+
+  <ion-alert
+  trigger="btn-editar"
+  header="Ingresar codigo"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+  [routerLink]="['/editar-producto']"
+  ></ion-alert>
+  <ion-alert
+  trigger="btn-eliminar"
+  header="Ingresar codigo"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+  ></ion-alert>
+
+</ion-content>

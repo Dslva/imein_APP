@@ -1,0 +1,7 @@
+{
+  "name": "Imein",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

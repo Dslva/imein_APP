@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>qrCode</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="card-content ion-text-center">
+    <ion-card-content>
+      <qrcode 
+        [qrdata]="'qrString'" 
+        [width]="320" 
+        [errorCorrectionLevel]="'M'">
+      </qrcode>
+    </ion-card-content>
+  </ion-card>
+  <ion-button class="btn-scan ion-margin" expand="block">Escanear codigo QR</ion-button>
+</ion-content>

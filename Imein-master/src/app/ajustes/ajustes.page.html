@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <div class="info-content ion-text-center">
+      <div class="div-img">
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"> 
+      </div>
+      <div class="info-nom">Diego Silva</div>
+      <div class="rol">Administrador</div>
+    </div>
+    <div class="div-info ion-text-center">
+      <div class="info"><ion-label>Correo:  diego@imein.cl</ion-label></div>
+      <div class="info"><ion-label>Numero: +56 9 0708 1234</ion-label></div>
+    </div>
+    <div class="div-btns-ajustes ion-text-center" [routerLink]="['/login']"><ion-button >Editar informacion</ion-button><ion-button color="danger">Cerrar sesion</ion-button></div>
+  </ion-card>
+</ion-content>

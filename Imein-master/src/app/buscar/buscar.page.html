@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>buscar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar  placeholder="Codigo de maquina"></ion-searchbar>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img alt="Silhouette of mountains" src="https://bbrskrental.s3-sa-east-1.amazonaws.com/images/product/102-F3-1300.jpg" />
+      </ion-thumbnail>
+      <div class="item-content-list">
+        <div class="block-top"><ion-label class="titulo">TOYOTA G27</ion-label></div>
+        <div class="block-buttom"><ion-label class="sub-titulo">COD:314034</ion-label></div>
+      </div>
+      <ion-button class="btn_list" slot="end" size="small" [routerLink]="['/info']"> Info </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img alt="Silhouette of mountains" src="https://img.inddist.com/files/base/indm/all/image/2012/12/id_1308_nomad50lp.png?auto=format%2Ccompress&fit=max&q=70&w=1200" />
+      </ion-thumbnail>
+      <div class="item-content-list">
+        <div class="block-top"><ion-label class="titulo">NICHIYU</ion-label></div>
+        <div class="block-buttom"><ion-label class="sub-titulo">COD:112004</ion-label></div>
+      </div>
+      <ion-button class="btn_list" slot="end" size="small"> Info </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img alt="Silhouette of mountains" src="https://creativebond.com.au/DMF/wp-content/uploads/2019/04/0012_3-Wheel-CounterBalance-all_1110x700.jpg" />
+      </ion-thumbnail>
+      <div class="item-content-list">
+        <div class="block-top"><ion-label class="titulo">NISSAN</ion-label></div>
+        <div class="block-buttom"><ion-label class="sub-titulo">COD:212004</ion-label></div>
+      </div>
+      <ion-button class="btn_list" slot="end" size="small"> Info </ion-button>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>
